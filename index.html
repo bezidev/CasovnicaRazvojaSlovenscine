@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%; height: 100%;">
+    <head>
+        <link title="timeline-styles" rel="stylesheet" href="timeline.css">
+        <script src="timeline.js"></script>
+        <style>
+            body,html {
+                margin: 0;
+                padding: 0;
+            }
+            * {
+                box-sizing: border-box;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <title>Časovnica razvoja slovenščine</title>
+    </head>
+    <body>
+        <div id='timeline-embed' style="width: 100%; min-height: 99vh;"></div>
+        <script>
+            timeline = new TL.Timeline('timeline-embed',
+                {
+                    "title": {
+                        "media": {
+                            "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Slovenian_language_map.png",
+                            "caption": "Slovenščina kot uradni jezik danes",
+                            "credit": "Wikimedia Commons"
+                        },
+                        "text": {
+                            "headline": "Slovenščina skozi čas",
+                        }
+                    },
+                    "events": [
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bri%C5%BEinski_spomeniki_3_%28alt%29.jpg",
+                                "caption": "Brižinski spomeniki",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "972"
+                            },
+                            "end_date": {
+                                "year": "1039"
+                            },
+                            "text": {
+                                "headline": "Brižinski spomeniki",
+                                "text": "Brižinski spomeniki, ki so nastali okoli leta 1000, so najstarejši ohranjeni zapisi v slovenščini in na sploh najstarejši ohranjeni zapis v kateremkoli slovanskem jeziku.<br>Skupaj vsebuje tri spomenike, prvi in tretji sta obrazca splošne spovedi, drugi pa je pridiga o grehu in pokori.<br>Napisani so v karolinški minuskuli in je dokaz, da takrat na Slovenskem še niso obstajala narečja."
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/sl/3/38/RateskiRokopis1.JPG",
+                                "caption": "Prvi rokopisi",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1300"
+                            },
+                            "end_date": {
+                                "year": "1499"
+                            },
+                            "text": {
+                                "headline": "Prvi rokopisi",
+                                "text": "Prvi rokopisi so že dokaz tega, da so se na Slovenskem razvijala narečja. Nastajali so v 14. in 15. stoletju."
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/sl/3/38/RateskiRokopis1.JPG",
+                                "caption": "Celovški rokopis",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1380"
+                            },
+                            "text": {
+                                "headline": "Celovški ali Rateški rokopis",
+                                "text": "<b>Celovški</b> ali <b>Rateški rokopis</b> izvira iz <b>Koroške</b>, nastal je v <b>drugi polovici 14. stoletja</b>, vsebuje tri molitve – očenaš, apostolska vera in zdrava Marija."
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Sti%C5%A1ki_rokopis_-_Na%C5%A1_gospud_je_od_smrti_vstal.jpg",
+                                "caption": "Stiški rokopis - Naš gospud je od smrti vstal",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1428"
+                            },
+                            "end_date": {
+                                "year": "1440"
+                            },
+                            "text": {
+                                "headline": "Stiški rokopis",
+                                "text": "<b>Stiški rokopis</b> izvira iz <b>Dolenjske</b>, nastal je v <b>prvi polovici 15. stoletja</b>. Poleg tega, da vsebuje obrazce splošnih spovedi, ki so čisto neizvirni, vsebuje tudi velikonočno pesem, ki pa je nekaj malega izvirna."
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Starogorski_rokopis.gif",
+                                "caption": "Starogorski rokopis",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1492"
+                            },
+                            "end_date": {
+                                "year": "1498"
+                            },
+                            "text": {
+                                "headline": "Starogorski rokopis",
+                                "text": "<b>Starogorski rokopis</b> izvira iz <b>Primorske</b>, nastal je v <b>drugi polovici 15. stoletja</b>. Vsebuje iste tri molitve kot Celovški rokopis, to so očenaš, apostolska vera in zdrava Marija."
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Primo%C5%BE_Trubar_%28woodcut%29.jpg",
+                                "caption": "Primož Trubar",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1550"
+                            },
+                            "end_date": {
+                                "year": "1599"
+                            },
+                            "text": {
+                                "headline": "Protestantizem ali reformacija",
+                                "text": "<b>Protestantizem</b> je obdobje, ki je zavzemalo <b>drugo polovico 16. stoletja</b>. S protestantizmom so se uprli katoliški cerkvi, ki je prodajala odpustke in diktirala branje Biblije v latinščini."
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Primo%C5%BE_Trubar_-_Katekizmus.jpg",
+                                "caption": "Katekizem",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1550"
+                            },
+                            "text": {
+                                "headline": "Abecednik in Katekizem",
+                                "text": "Leta 1550 izideta Katekizem in Abecednik. Slednji izide kot pripomoček k branju Katekizma. V Katekizmu Primož Trubar zapiše verske resnice, prvič omeni Slovence kot svoj, samostojen narod in slovenščino utemelji kot knjižni jezik. Hkrati je Katekizem prva slovenska tiskana knjiga. Za osnovo - knjižni jezik - je vzel ljubljansko mestno govorico. Tako je poenotil Slovence in določil govorico, ki naj bi jo vsi razumeli, navkljub narečnim razlikam. Trubar je želel slovenščino, ki bi bila razumljiva vsem, ne glede na sloj, da bi vsi znali brati in pisati ter govoriti knjižno slovenščino.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bohoricica_rokopis_presern_1848_zdravlica_%28fragment%29.jpg",
+                                "caption": "Prešernova Zdravljica napisana v bohoričici",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1550"
+                            },
+                            "end_date": {
+                                "year": "1850"
+                            },
+                            "text": {
+                                "headline": "Bohoričica",
+                                "text": "Prva izdaja Katekizma izide v gotici, nakar pa se Trubar zave, da mora slovenščina imeti tudi svojo pisavo kot samostojen jezik in zato vse nadaljnje izdaje izidejo v bohoričici, pisavi njegovega sodobnika, Adama Bohoriča, ki se že dotakne problema šumnikov in sičnikov. Navkljub temu, da je Bohorič bolj kot ne standardiziral pisavo, je Trubar ni zapisoval dosledno - uporabljal je več črk za en glas.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Adam_Bohori%C4%8D_-_Zimske_urice_proste.pdf/page7-516px-Adam_Bohori%C4%8D_-_Zimske_urice_proste.pdf.jpg",
+                                "caption": "Zimske urice proste",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1584"
+                            },
+                            "text": {
+                                "headline": "Zimske urice proste",
+                                "text": "Trubarjev sodobnik Adam Bohorič leta 1584 napiše prvo slovensko slovnico. To napiše v latinščini.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Toma%C5%BE_Hren.jpg",
+                                "caption": "Tomaž Hren",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1570"
+                            },
+                            "end_date": {
+                                "year": "1630"
+                            },
+                            "text": {
+                                "headline": "Protireformacija",
+                                "text": "Odgovor katoliške cerkve na protestantsko gibanje, je bila protireformacija, ki je bila aktivna predvsem v <b>prvi polovici 17. stoletja</b>. Za protireformacijo je znano, da so preganjali reformatorje in zažigali protestantske knjige. V tem času je katoliška cerkev uspešno pregnala reformatorje na slovenskem, protestantizem se je ohranil le še v Prekmurju.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Toma%C5%BE_Hren.jpg",
+                                "caption": "Tomaž Hren",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1560"
+                            },
+                            "end_date": {
+                                "year": "1630"
+                            },
+                            "text": {
+                                "headline": "Tomaž Hren",
+                                "text": "Škof Tomaž Hren je bil vodilni protireformator na Kranjskem. V času njegovega vladanja temu gibanju uspešno zažge vse protestantske knjige, razen Biblije. S tem ohrani ideje nasprotnikov, saj mu je Sveto pismo najbolj sveto. Večkrat tudi prosi višje katoliške uradnike zato, da lahko obdrži izvode Biblije. Seveda iztrga vse protestantske uvode, saj to še vedno velja za krivoverstvo, Biblijo pa preda drugim izobraženim katoliškim piscem, ki pišejo analize in interpretacije Biblije - seveda vse za uporabo drugim izobražencem, tj. duhovnikom.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Evangelia_inu_lystuvi_%28cover%29.jpg",
+                                "caption": "Evangelia inu lystuvi",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1613"
+                            },
+                            "text": {
+                                "headline": "Evangeliji in pisma",
+                                "text": "Janez Čandek leta 1613 na svoje stroške prevede, pregleda in izda zbornik molitev in pesmi, Evangelia inu lystuvi, ki temelji tudi na Dalmatinovem prevodu Biblije. Prav tako obdrži bohoričico kot pisavo.",
+                            }
+                        },
+                        {
+                            "start_date": {
+                                "year": "1750"
+                            },
+                            "end_date": {
+                                "year": "1850"
+                            },
+                            "text": {
+                                "headline": "Druga polovica 18. stoletja in prva polovica 19. stoletja",
+                                "text": "V <b>drugi polovici 18. stoletja in prvi polovici 19. stoletja</b> je slovenščina že dodobra razdeljena na narečja in pokrajinske različice. Hkrati se pa pojavi tudi prekmurski knjižni jezik, ki je že tako drugačen in zašel na čisto svojo pot v razvoju slovenščine. To se je zgodilo predvsem zato, ker je Prekmurje takrat pripadalo drugi državi kot preostala Slovenija.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Plakat_ob_plebiscitu_Mama%2C_ne_%C5%A1timajte_za_Jugoslavijo_1920.jpg",
+                                "caption": 'Nemški propagandni plakat, ki prikazuje nemčizem "stimmen" in "einrücken"',
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1750"
+                            },
+                            "end_date": {
+                                "year": "1850"
+                            },
+                            "text": {
+                                "headline": "Nemčizmi in nemškutarstvo",
+                                "text": "V <b>drugi polovici 18. stoletja in prvi polovici 19. stoletja</b> so se že pojavljali pritiski na slovenščino. Pritiski so se vršili nad meščanskim razredom in plemstvom, saj naj bi bila nemščina več vredna. Na ta način je slovenščina dobila ogromno nemčizmov, čeprav jih veliko izvira še iz časa Trubarja, ki se ni trudil uporabljati slovenskih ustreznic, temveč je pogosto uporabljal nemčizme.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kaiserin_Maria_Theresia_%28HRR%29.jpg",
+                                "caption": "Marija Terezija",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1740"
+                            },
+                            "end_date": {
+                                "year": "1780"
+                            },
+                            "text": {
+                                "headline": "Obdobje razsvetljenega absolutizma in vladanja Marije Terezije",
+                                "text": "Marija Terezija je med letoma 1740 in 1780 vladala habsburški državi. Spodbujala je učenje slovenščine, ustanavljala šole v katerih so se učenci učili osnov slovenščine.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/First_French_Empire_1812.svg",
+                                "caption": "Prvi francoski imperij (Ilirske province obsegajo najbolj vzhoden temno-modri del)",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1809"
+                            },
+                            "end_date": {
+                                "year": "1814"
+                            },
+                            "text": {
+                                "headline": "Ilirske province",
+                                "text": "Napoleon je med letoma 1809 in 1814 držal politično oblast nad Slovenijo, katero je prevzel od habsburške monarhije. Napoleon je bil prav tako razsvetljeni absolutist, želel se je znebiti nemščine, zato je prišlo tudi do tega, da je spodbujal uporabo slovenščine.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://www.dlib.si/streamdb/URN:NBN:SI:DOC-DU5DNOB1",
+                                "caption": "Pismenost ali gramatika sa perve shole",
+                                "credit": "dLib.si"
+                            },
+                            "start_date": {
+                                "year": "1811"
+                            },
+                            "text": {
+                                "headline": "Valentin Vodnik in prva slovenska slovnica v slovenskem jeziku",
+                                "text": "Valentin Vodnik je leta 1811 napisal prvo slovensko slovnico v slovenščini za namen poučevanja v šolah.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/sl/b/b1/Jernej_Kopitar.jpg",
+                                "caption": "Jernej Kopitar",
+                                "credit": "Wikipedija"
+                            },
+                            "start_date": {
+                                "year": "1780"
+                            },
+                            "end_date": {
+                                "year": "1844"
+                            },
+                            "text": {
+                                "headline": "Jernej Kopitar",
+                                "text": "Jernej Kopitar, takratni vrhovni cenzor habsburške monarhije, najbolj znan po cenzuri in kritiki Prešerna, je ustanovil svoj krog - krog podobno mislečih, temu danes rečemo Kopitarjev krog. Kopitar je bil miselnosti, da je slovenščina jezik kmečkega prebivalstva in ga je zato tudi treba narediti kmečkemu prebivalstvu prijaznega - tj. brez uporabe kompleksnejših besed in kompleksnejših besedil, s čemur se pa France Prešeren in Čopov krog nista strinjala. Kopitar je prav tako spodbujal pisave, ki so sledile načelu, da ima vsak glas svojo črko.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Jernej_Kopitar_-_Grammatik_der_Slavischen_Sprache_in_Krain%2C_K%C3%A4rnten_und_Steyermark.pdf/page2-330px-Jernej_Kopitar_-_Grammatik_der_Slavischen_Sprache_in_Krain%2C_K%C3%A4rnten_und_Steyermark.pdf.jpg",
+                                "caption": "Grammatik der Slavischen Sprache in Krain, Kärnten und Steyermark",
+                                "credit": "Wikipedija"
+                            },
+                            "start_date": {
+                                "year": "1808"
+                            },
+                            "end_date": {
+                                "year": "1809"
+                            },
+                            "text": {
+                                "headline": "Slovnica slovenskega jezika na Kranjskem, Koroškem in Štajerskem",
+                                "text": "Jernej Kopitar med letoma 1808 in 1809 izda prvo znanstveno slovnico, ki v naslovu združuje Kranjsko, Koroško in Štajersko pod eno streho, kot en slovenski jezik. Pomembno je poudariti, da ne vključi Prekmurja, saj je ta zašel čisto svojo pot v razvoju jezika. Znanstvena slovnica je vsaka slovnica, ki se izda v knjižni obliki (ne rokopis) in uporablja metodo poslušanja, analiziranja in hkrati izvleče pravila iz poslušanja govorcev jezika. Razlikuje se v tem, da ni ene osebe, ki bi zapovedovala oz. diktirala celotno pot knjižnega jezika, kaj se sme delati in kaj ne, kot je bilo v veljavi pri Bohoričevi slovnici. Kopitar ni bil prvi, ki je napisal slovnico na tak način, a je bil prvi, ki jo je izdal v knjižni obliki.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/France_Pre%C5%A1eren_-_%C4%8Crkarska_pravda.jpg",
+                                "caption": "France Prešeren: Črkarska pravda",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1831"
+                            },
+                            "end_date": {
+                                "year": "1833"
+                            },
+                            "text": {
+                                "headline": "Čopov in Kopitarjev krog, abecedna vojna",
+                                "text": "Med abecedno vojno, s katero je Kopitarjev krog želel zamenjati do tedaj veljavno bohoričico z metelčico. Ker je metelčica sledila načelu en glas je ena črka, je Kopitar močno spodbujal ta črkopis, a problem je bil, da ga je Čopov krog močno zavračal. Metelko je s svojim črkopisom prav tako jemal črke iz cirilice, kar se jim je zdelo nespodobno. S Kopitarjevim načelom se je izkazalo, da ima en problem - zapisovanje vseh narečnih glasov, kar je še dodatno pripomoglo k pogubi metelčice. V tistem času je Peter Dajnko prav tako poskušal izdati svoj črkopis, dajnčico, a je Kopitarjev krog raje sprejel metelčico, saj si jih je Dajnko poleg tega, da je jemal črke iz cirilice, tudi izmišljal. Abecedna vojna se konča z zmago bohoričice, čeprav so nekaj časa uporabljali tudi metelčico.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Slovenska_abeceda.png",
+                                "caption": "Sodobna gajica - slovenska abeceda",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1850",
+                                "display_date": "1850-"
+                            },
+                            "text": {
+                                "headline": "Dogovor o jeziku",
+                                "text": "Ker so še vedno obstajala trenja glede knjižnega jezika, so se odločili skleniti kompromis - slovenščino vrnejo nazaj v čas 16. stoletja, tj. čas Adama Bohoriča in Primoža Trubarja in uvedejo gajico.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Mihael_Stroj_-_Stanko_Vraz.jpg/725px-Mihael_Stroj_-_Stanko_Vraz.jpg",
+                                "caption": "Stanko Vraz",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1810"
+                            },
+                            "end_date": {
+                                "year": "1851"
+                            },
+                            "text": {
+                                "headline": "Ilirizem",
+                                "text": "Ker so bili jezikoslovci takrat mnenja, da so slovanski jeziki čisto preveč zakomplicirani in jih je enostavno preveč, so se odločili ponuditi rešitev - združimo vse razdrobljene jezike v par enotnih, z enotno pisavo, katere bi vsi Slovani, ki živijo na tistem področju razumeli. Slovenskemu prostoru naj bi pripadal skupni jezik jugozahodnega Balkana. Stanko Vraz je bil edini vidnejši član, ki je podpiral to idejo na Slovenskem, a sta ga oba kroga - tako Čopov, kot tudi Kopitarjev zavrnila. To je bilo hkrati tudi obdobje, ko so si prizadevali očistiti slovenščino nemčizmov.",
+                            }
+                        },
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jovan_Vesel_Koseski.jpg/330px-Jovan_Vesel_Koseski.jpg",
+                                "caption": 'Jovan Vesel "Koseski"',
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1798"
+                            },
+                            "end_date": {
+                                "year": "1884"
+                            },
+                            "text": {
+                                "headline": "Jovan Vesel Koseski",
+                                "text": "Jovan Vesel (psevdonim Koseski), največji pesnik tistega časa, je podpiral gajico in jo že relativno zgodaj začel uporabljati. Hkrati je rad povzročal preglavice jezikoslovcem, s tem da si je kar izmišljal besede. Vse to je delal v imenu metruma. Vsi, ki so brali njegove pesmi, so se delali, da vejo, kaj govori, a v resnici niso ničesar vedeli.",
+                            }
+                        },
+                        /*
+                        {
+                            "media": {
+                                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Toma%C5%BE_Hren.jpg",
+                                "caption": "Slika",
+                                "credit": "Wikimedia Commons"
+                            },
+                            "start_date": {
+                                "year": "1560"
+                            },
+                            "end_date": {
+                                "year": "1630"
+                            },
+                            "text": {
+                                "headline": "Predloga",
+                                "text": "",
+                            }
+                        },
+                        */
+                    ]
+                });
+        </script>
+    </body>
+</html>
